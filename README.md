@@ -5,6 +5,8 @@ Nokturno je přehrávač a vyhledávač pro **Stremio** a **Nuvio** nad tvým vl
 Běží jako malá aplikace u tebe – na počítači, NASu nebo Android TV boxu – a Stremio se na ni
 ptá jako na každý jiný doplněk. Nokturno samo žádný obsah nehostuje ani nešíří.
 
+> **Patří k sobě:** Nokturno je i jako [**doplněk pro Kodi**](https://github.com/nokturno-app/plugin.video.nokturno) a jako [**integrace pro Home Assistant**](https://github.com/nokturno-app/nokturno-ha) (HACS). Všechny stojí na společném jádru.
+
 Tady jsou jen hotové aplikace ke stažení a soubor `update.json`, podle kterého se aplikace
 sama aktualizuje. Návody a řešení problémů jsou v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
