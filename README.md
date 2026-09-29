@@ -75,6 +75,37 @@ do datové složky, soubor v `ExecStart` se proto při nové verzi měnit nemus�
 2. Nainstaluj `nokturno-<verze>.apk` a otevři **Nokturno**. Aplikace ukáže adresy pro nastavení.
 3. Běží na pozadí s trvalým oznámením „Nokturno běží“ a po zapnutí zařízení se spustí sama.
 
+## Instalace jedním příkazem (Linux, VPS, Raspberry Pi)
+
+Na Debianu, Ubuntu a Raspberry Pi OS nainstaluje aplikaci jako službu systemd (běží pořád, i po restartu):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/nokturno-app/nokturno-stremio-app/main/install.sh | sudo bash
+```
+
+Skript pozná architekturu (amd64, arm64, arm, 386), stáhne aplikaci z posledního vydání a ověří otisk SHA-256.
+Aplikace je v `/opt/nokturno/nokturno`, nastavení a data v `/opt/nokturno/data` (`nokturno.json`),
+služba se jmenuje `nokturno` (`systemctl status nokturno`, výpis `journalctl -u nokturno`).
+
+- **Domácí síť (bez přepínačů):** aplikace poslouchá na portu 7140 a 7141 (HTTPS přes local-ip.co) jako na počítači.
+  Nastavení otevřeš na `http://<IP stroje>:7140/configure`.
+- **VPS s doménou:** `… | sudo bash -s -- --domain nokturno.example.cz`. Skript nainstaluje
+  [Caddy](https://caddyserver.com) s certifikátem Let's Encrypt, aplikace poslouchá jen na `127.0.0.1`
+  a nastavení je na `https://nokturno.example.cz/configure`. Záznam A (nebo AAAA) domény musí mířit
+  na veřejnou IP serveru. Je-li nainstalovaný `ufw`, povolí porty 22, 80 a 443 a zapne ho.
+
+| Přepínač | Co dělá |
+|---|---|
+| `--domain DOMÉNA` | VPS s doménou a Caddy (viz výše) |
+| `--port 7140` | jiný port aplikace (HTTPS v domácí síti je vždy o jedna vyšší) |
+| `--no-firewall` | nesahá na `ufw` |
+| `--uninstall` | odstraní službu, aplikaci a konfiguraci Caddy pro Nokturno, data nechá v `/opt/nokturno/data` |
+
+Opakované spuštění stáhne novější aplikaci a zachová nastavení i data. Doménu a port si pamatuje,
+nemusíš je zadávat znovu.
+
+Adresa doplňku obsahuje tvoje účty. Když aplikaci vystavíš do internetu na doméně, adresu nikomu neposílej.
+
 ## Přidání do Stremia a Nuvia
 
 1. Otevři v prohlížeči nastavení doplňku:
@@ -110,6 +141,7 @@ Při prvním spuštění vznikne v datové složce soubor `nokturno.json`:
 
 | Volba | Výchozí | Co dělá |
 |---|---|---|
+| `host` | `0.0.0.0` | adresa poslechu, za reverzní proxy `127.0.0.1` (od verze 9.0.1) |
 | `port` | `7140` | port nastavení a doplňku přes http |
 | `https_port` | `7141` | port HTTPS pro Stremio z jiného zařízení |
 | `enable_https` | `true` | `false` vypne HTTPS (pak doplněk funguje jen na tomtéž zařízení) |
