@@ -141,7 +141,8 @@ Při prvním spuštění vznikne v datové složce soubor `nokturno.json`:
 
 | Volba | Výchozí | Co dělá |
 |---|---|---|
-| `host` | `0.0.0.0` | adresa poslechu, za reverzní proxy `127.0.0.1` (od verze 9.0.1) |
+| `host` | `0.0.0.0` | adresa poslechu, za reverzní proxy `127.0.0.1` (od verze 9.0.4) |
+| `soukroma` | `false` | `true` = soukromá instance: doplněk obslouží jen nastavení povolená tlačítkem *Povolit na tomhle serveru* na `/configure` nebo `nokturno --povolit <adresa doplňku>` (od verze 9.0.4) |
 | `port` | `7140` | port nastavení a doplňku přes http |
 | `https_port` | `7141` | port HTTPS pro Stremio z jiného zařízení |
 | `enable_https` | `true` | `false` vypne HTTPS (pak doplněk funguje jen na tomtéž zařízení) |

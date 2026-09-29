@@ -135,7 +135,7 @@ zaloz_uzivatele_a_slozky() {
   chmod 0750 "$DATA"
 }
 
-# host v nokturno.json (umí aplikace od 9.0.1; starší ho ignoruje a poslouchá na všech rozhraních)
+# host v nokturno.json (umí aplikace od 9.0.4; starší ho ignoruje a poslouchá na všech rozhraních)
 zapis_nastaveni() {
   local host="0.0.0.0" soubor="$DATA/nokturno.json"
   [ -n "$1" ] && host="127.0.0.1"
@@ -320,7 +320,7 @@ shrnuti() {
   if [ -n "$domena" ]; then
     adresa="https://$domena/configure"
     if command -v ss >/dev/null && ss -ltnH "( sport = :$port )" 2>/dev/null | grep -qv '127.0.0.1'; then
-      varovani "tato verze aplikace poslouchá na všech rozhraních, port $port zavři firewallem. Opraví to verze 9.0.1 (spusť skript znovu)."
+      varovani "tato verze aplikace poslouchá na všech rozhraních, port $port zavři firewallem. Opraví to verze 9.0.4 (spusť skript znovu)."
     fi
   else
     ip=$(mistni_ip); ip="${ip:-<IP tohoto stroje>}"
