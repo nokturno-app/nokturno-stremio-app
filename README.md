@@ -110,6 +110,18 @@ nemusíš je zadávat znovu.
 
 Adresa doplňku obsahuje tvoje účty. Když aplikaci vystavíš do internetu na doméně, adresu nikomu neposílej.
 
+## Docker (včetně Mikrotiku)
+
+Hotový obraz pro amd64, arm64 i arm (Raspberry Pi, NAS, router Mikrotik s kontejnery) je na `ghcr.io/nokturno-app/nokturno-stremio-app`.
+
+```bash
+docker run -d --name nokturno --restart unless-stopped \
+  -p 7140:7140 -v nokturno-data:/data \
+  ghcr.io/nokturno-app/nokturno-stremio-app:latest
+```
+
+Nastavení pak otevři na `http://<adresa zařízení>:7140/configure`. Aktualizace v kontejneru se sama neprovádí, stáhni nový obraz (`docker pull` a znovu spusť kontejner). Na Mikrotiku zadej v kontejneru tentýž obraz, port 7140 a svazek na `/data`.
+
 ## Přidání do Stremia a Nuvia
 
 1. Otevři v prohlížeči nastavení doplňku:

@@ -1,0 +1,42 @@
+name: docker
+# Obraz pro amd64, arm64 a arm (i Mikrotik): ghcr.io/nokturno-app/nokturno-stremio-app
+# Staví se z vydání v tomhle repu (zip s doplňkem), takže nepotřebuje zdrojáky soukromého repa.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag: { description: "Tag vydání (např. v9.4.0)", required: true }
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  obraz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vydání
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          PRE: ${{ github.event.release.prerelease || 'false' }}
+        run: |
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p 'nokturno-*.zip'
+          unzip -q nokturno-*.zip
+          test -d nokturno
+          echo "V=${TAG#v}" >> "$GITHUB_ENV"
+          echo "PRE=$PRE" >> "$GITHUB_ENV"
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+      - name: Sestavit a nahrát
+        run: |
+          TAGS="-t ghcr.io/nokturno-app/nokturno-stremio-app:$V"
+          [ "$PRE" = "true" ] || TAGS="$TAGS -t ghcr.io/nokturno-app/nokturno-stremio-app:latest"
+          docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 $TAGS --push .
