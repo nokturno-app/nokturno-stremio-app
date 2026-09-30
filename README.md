@@ -39,9 +39,9 @@ nebo přímo na tom, kde Stremio pouštíš.
 2. Když Windows ukáže „Systém Windows ochránil váš počítač“, klikni na **Další informace → Přesto spustit**.
    Aplikace není podepsaná certifikátem, proto to Windows hlásí.
 3. Když se brána firewall zeptá na přístup, povol ho pro **soukromé sítě** (jinak ji Stremio z jiného zařízení nenajde).
-4. Otevře se okno s výpisem. Dokud je otevřené, aplikace běží. Zavřením ji vypneš.
+4. Od verze 9.3.0 běží bez okna. V oznamovací oblasti vpravo dole (případně pod šipkou ^) je ikona měsíce: dvojklik otevře nastavení, **Ukončit** aplikaci vypne.
 
-Ať se spouští sama: stiskni `Win + R`, napiš `shell:startup` a do otevřené složky vlož zástupce na `.exe`.
+Ať se spouští sama po zapnutí počítače: stiskni `Win + R`, napiš `shell:startup` a do otevřené složky vlož zástupce na `.exe` (pravé tlačítko na `.exe` při tažení → **Vytvořit zde zástupce**).
 
 ### macOS
 1. V Terminálu přejdi do složky se staženým souborem a povol spuštění:
