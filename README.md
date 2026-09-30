@@ -112,15 +112,17 @@ Adresa doplňku obsahuje tvoje účty. Když aplikaci vystavíš do internetu na
 
 ## Docker (včetně Mikrotiku)
 
-Hotový obraz pro amd64, arm64 i arm (Raspberry Pi, NAS, router Mikrotik s kontejnery) je na `ghcr.io/nokturno-app/nokturno-stremio-app`.
+Ke každému vydání je obraz pro Docker: `nokturno-<verze>-docker-amd64.tar` (běžné PC a NAS), `-arm64.tar` (Raspberry Pi 4 a 5, ARM NAS) a `-arm.tar` (starší Raspberry Pi, Mikrotik s ARM).
 
 ```bash
+docker load -i nokturno-<verze>-docker-amd64.tar
 docker run -d --name nokturno --restart unless-stopped \
-  -p 7140:7140 -v nokturno-data:/data \
-  ghcr.io/nokturno-app/nokturno-stremio-app:latest
+  -p 7140:7140 -v nokturno-data:/data nokturno:<verze>
 ```
 
-Nastavení pak otevři na `http://<adresa zařízení>:7140/configure`. Aktualizace v kontejneru se sama neprovádí, stáhni nový obraz (`docker pull` a znovu spusť kontejner). Na Mikrotiku zadej v kontejneru tentýž obraz, port 7140 a svazek na `/data`.
+Nastavení pak otevři na `http://<adresa zařízení>:7140/configure`. V kontejneru se aplikace sama neaktualizuje: pro novou verzi stáhni nový `.tar`, načti ho a kontejner vytvoř znovu (data zůstanou ve svazku `/data`).
+
+**Mikrotik:** nahraj `.tar` do routeru (Files) a v Container → Add zvol **File** s tímto souborem, port 7140 a mount na `/data`. Potřebuješ RouterOS s balíčkem `container` a architekturu podle routeru (`arm64`, `arm` nebo `amd64`).
 
 ## Přidání do Stremia a Nuvia
 
