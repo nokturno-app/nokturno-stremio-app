@@ -1,6 +1,7 @@
 # Nokturno pro Stremio v kontejneru. Doplněk nemá žádné závislosti mimo standardní knihovnu,
 # stačí slim obraz a složka `nokturno/` z vydání (workflow docker.yml ji rozbalí vedle).
 FROM python:3.12-slim
+LABEL org.opencontainers.image.source="https://github.com/nokturno-app/nokturno-stremio-app" org.opencontainers.image.description="Nokturno pro Stremio a Nuvio"
 
 RUN useradd --create-home --uid 10001 nokturno
 WORKDIR /app
