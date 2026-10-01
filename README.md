@@ -41,7 +41,12 @@ nebo přímo na tom, kde Stremio pouštíš.
 3. Když se brána firewall zeptá na přístup, povol ho pro **soukromé sítě** (jinak ji Stremio z jiného zařízení nenajde).
 4. Od verze 9.3.0 běží bez okna. V oznamovací oblasti vpravo dole (případně pod šipkou ^) je ikona měsíce: dvojklik otevře nastavení, **Ukončit** aplikaci vypne.
 
-Ať se spouští sama po zapnutí počítače: stiskni `Win + R`, napiš `shell:startup` a do otevřené složky vlož zástupce na `.exe` (pravé tlačítko na `.exe` při tažení → **Vytvořit zde zástupce**).
+Ať běží pořád, i po restartu a bez přihlášení: v Příkazovém řádku ve složce se staženým souborem spusť
+`nokturno-<verze>-windows-amd64.exe --install` a potvrď dotaz na oprávnění správce. Aplikace se nainstaluje
+jako služba Windows **Nokturno pro Stremio** (najdeš ji ve `services.msc`), povolí si přístup v bráně firewall
+a sama se restartuje, kdyby spadla. Nastavení a data přenese z dosavadní aplikace do `C:\ProgramData\Nokturno`.
+Před instalací ukonči aplikaci v oznamovací oblasti. Odinstalace: `C:\ProgramData\Nokturno\nokturno.exe --uninstall`
+(nastavení zůstane). Kdo službu nechce, může dál dát zástupce na `.exe` do složky `shell:startup` (`Win + R`).
 
 ### macOS
 1. V Terminálu přejdi do složky se staženým souborem a povol spuštění:
@@ -52,6 +57,11 @@ Ať se spouští sama po zapnutí počítače: stiskni `Win + R`, napiš `shell:
    Druhý příkaz odstraní značku staženého souboru. Bez něj macOS (Gatekeeper) spuštění zablokuje,
    protože aplikace není podepsaná. Jinak to jde i přes **Nastavení systému → Soukromí a zabezpečení → Přesto otevřít**.
 2. Spusť ji: `./nokturno-<verze>-macos-arm64` (nebo `-amd64`). Okno Terminálu nech otevřené.
+
+Ať běží pořád, i po restartu a bez přihlášení: `sudo ./nokturno-<verze>-macos-arm64 --install` (nebo `-amd64`).
+Aplikace se nainstaluje jako služba macOS do `/Library/Application Support/Nokturno`, přenese tam nastavení
+a sama se restartuje, kdyby spadla. Okno Terminálu pak můžeš zavřít. Odinstalace:
+`sudo "/Library/Application Support/Nokturno/nokturno" --uninstall` (nastavení zůstane).
 
 ### Linux
 ```bash
