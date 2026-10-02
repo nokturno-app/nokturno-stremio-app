@@ -2,6 +2,15 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.9.0 – kodek obrazu, další vlajky a značka CAM (2026-10-02)
+
+- **Kodek obrazu.** Popis streamu ukazuje kodek z hlavičky souboru (🎞 HEVC, AVC, AV1, MPEG-4…), ať je hned jasné, co tvůj přehrávač zvládne.
+- **Další vlajky.** Zvuk v japonštině, korejštině, čínštině, ukrajinštině a dalších jazycích má vlastní vlajku.
+- **Značka CAM.** Nahrávky z kina mají ve výpisu vždy značku 🎥 CAM. Nově mezi ně patří i soubory označené KINO, screener a R5 naopak ne – bývají to uniklé verze v dobré kvalitě.
+- **Značky obrazu oddělené:** 4K DV • HDR10.
+- **Anglický název.** Film, který má ve Stremiu původní název, najde i soubory pojmenované anglicky (La tregua × The Truce).
+- **Filmy v kině.** Mezi streamy nového filmu se nepletou soubory starších filmů se stejným začátkem názvu (Resident Evil).
+
 ## 9.8.2 – drobné opravy (2026-10-02)
 
 Ukončení aplikace v terminálu klávesami Ctrl+C už nekončí chybovým výpisem.
