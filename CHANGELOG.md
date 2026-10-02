@@ -2,6 +2,14 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.6.2 – drobné opravy (2026-10-02)
+
+Když stránka nastavení nedokáže načíst seznam profilů, ukáže rovnou formulář místo prázdné stránky.
+
+## 9.6.1 – úložiště a FastShare hrají i ve Stremiu pro Android (2026-10-02)
+
+Stremio pro Android neposílalo přihlášení k vlastnímu úložišti ani k FastShare, takže se film z nich nespustil a přehrávač jen přepínal. Soubor teď přehrávači předává aplikace Nokturno sama, přihlášení do Stremia neodchází. Upozornění o webovém přehrávači u streamů zmizelo.
+
 ## 9.6.0 – profily nastavení a QR kód (2026-10-02)
 
 Nastavení se ukládá v aplikaci a adresa doplňku je krátká, bez hesel.
