@@ -2,6 +2,14 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.7.1 – výběr profilu i pro kamarády (2026-10-02)
+
+Na sdílené instanci (`"sdilena": true`) vidí stránka nastavení i z internetu výběr profilů: založení nového profilu s názvem, otevření, přejmenování a smazání.
+
+## 9.7.0 – nastavení pro kamarády (2026-10-02)
+
+Aplikaci na VPS nebo jiném serveru s veřejnou adresou můžeš pustit i kamarádům. Volba `"sdilena": true` v souboru `nokturno.json` zpřístupní stránku nastavení i z internetu: kamarád si na ní založí vlastní profil se svými účty a doplněk přidá do svého Stremia.
+
 ## 9.6.2 – drobné opravy (2026-10-02)
 
 Když stránka nastavení nedokáže načíst seznam profilů, ukáže rovnou formulář místo prázdné stránky.

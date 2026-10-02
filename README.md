@@ -178,6 +178,7 @@ Při prvním spuštění vznikne v datové složce soubor `nokturno.json`:
 | `host` | `0.0.0.0` | adresa poslechu, za reverzní proxy `127.0.0.1` (od verze 9.0.4) |
 | `public_url` | `""` | veřejná adresa doplňku, kterou ukáže `/configure`, např. `https://nokturno.example.cz` – když formulář otevíráš přes Tailscale nebo domácí síť (od verze 9.0.5) |
 | `soukroma` | `false` | `true` = soukromá instance: doplněk obslouží jen nastavení povolená tlačítkem *Povolit na tomhle serveru* na `/configure` nebo `nokturno --povolit <adresa doplňku>` (od verze 9.0.4) |
+| `sdilena` | `false` | `true` = stránka nastavení včetně výběru profilů jde i z internetu, ať si kamarádi založí vlastní profil se svými účty (od verze 9.7.0). Kdo zná adresu, vidí všechny profily – dávej ji jen lidem, kterým věříš |
 | `port` | `7140` | port nastavení a doplňku přes http |
 | `https_port` | `7141` | port HTTPS pro Stremio z jiného zařízení |
 | `enable_https` | `true` | `false` vypne HTTPS (pak doplněk funguje jen na tomtéž zařízení) |
