@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.8.2 – drobné opravy (2026-10-02)
+
+Ukončení aplikace v terminálu klávesami Ctrl+C už nekončí chybovým výpisem.
+
 ## 9.7.1 – výběr profilu i pro kamarády (2026-10-02)
 
 Na sdílené instanci (`"sdilena": true`) vidí stránka nastavení i z internetu výběr profilů: založení nového profilu s názvem, otevření, přejmenování a smazání.
