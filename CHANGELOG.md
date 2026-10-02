@@ -1,0 +1,127 @@
+# Změny – Nokturno pro Stremio
+
+Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
+
+## 9.6.0 – profily nastavení a QR kód (2026-10-02)
+
+Nastavení se ukládá v aplikaci a adresa doplňku je krátká, bez hesel.
+
+- **Profily nastavení.** Na stránce nastavení (`/configure`) založíš pojmenovaný profil (třeba *Obývák*, *Mobil*). Nastavení se uloží v aplikaci a adresa doplňku nese jen náhodný klíč profilu.
+- **Změny bez nového přidání.** Účty, úložiště a předvolby uložíš tlačítkem **Uložit změny** a platí hned – doplněk do Stremia znovu nepřidáváš. Jen po změně katalogů je potřeba doplněk přidat znovu (Stremio si katalogy pamatuje).
+- **Víc profilů.** Seznam uložených profilů s možností otevřít, přejmenovat nebo smazat. Profil bez názvu nejde založit.
+- **QR kód pro mobil.** Tlačítko **QR pro mobil** ukáže kód, který na telefonu otevře stránku s tlačítky Přidat do Stremia, Přidat do Nuvia a Zkopírovat adresu.
+- **Zdroje v záložkách.** Každý zdroj má ve formuláři vlastní záložku, vyplněný zdroj má zelenou tečku a lišta záložek zůstává při rolování nahoře.
+- **Ověřit všechny účty.** Jedno tlačítko ověří všechny vyplněné účty naráz a výsledek ukáže v rámečku, klik na řádek otevře záložku zdroje.
+- **Převod staré adresy.** Doplněk se starou dlouhou adresou (do 9.5.x) se po otevření nastavení ve Stremiu sám převede na profil. Pak ho přidej znovu a starý odeber.
+
+## 9.5.4 – rychlejší hledání a pomoc při chybě přidání (2026-10-01)
+
+Pomalý zdroj už seznam streamů nezdržuje a spojení se zdroji se používají opakovaně. Když router v domácí síti nepřeloží adresu doplňku (ochrana proti DNS rebinding), stránka nastavení to ukáže i s postupem a nabídne adresu 127.0.0.1. Drobné opravy.
+
+## 9.5.2 – oprava HTTPS na macOS (2026-10-01)
+
+Samostatný program pro macOS (a Linux bez systémových certifikátů) si nově nese vlastní kořenové certifikáty. Dřív na Macu s čipem Apple selhalo stažení certifikátu pro HTTPS v domácí síti.
+
+## 9.5.1 – drobné opravy (2026-10-01)
+
+Drobné opravy.
+
+## 9.5.0 – služba Windows a macOS (2026-10-01)
+
+Aplikace se dá nainstalovat jako služba, takže běží pořád – i po restartu a bez přihlášení.
+
+- Windows: `nokturno-9.5.0-windows-amd64.exe --install` (potvrď oprávnění správce). Služba „Nokturno pro Stremio“ je ve services.msc, sama si povolí přístup v bráně firewall a po pádu se restartuje. Nastavení se přenese do C:\ProgramData\Nokturno. Odinstalace: `C:\ProgramData\Nokturno\nokturno.exe --uninstall`.
+- macOS: `sudo ./nokturno-9.5.0-macos-arm64 --install` (nebo -amd64). Okno Terminálu už nemusí zůstat otevřené. Odinstalace: `sudo "/Library/Application Support/Nokturno/nokturno" --uninstall`.
+- Na Windows druhé spuštění aplikace jen otevře nastavení v prohlížeči.
+
+## 9.4.0 – skrytí nahrávek z kina (2026-09-30)
+
+Ve formuláři je nový přepínač Skrýt nahrávky z kina (CAM, telesync), zapnutý ve výchozím stavu. Když zatím existuje jen nahrávka z kina, zobrazí se.
+
+## 9.3.5 – opravy chyb (2026-09-30)
+
+Drobné opravy.
+
+## 9.3.4 – bez nahrávek z kina (2026-09-30)
+
+Drobné opravy.
+
+## 9.3.3 – opravy chyb (2026-09-30)
+
+Drobné opravy.
+
+## 9.3.2 – katalogy TMDB bez vlastního klíče (2026-09-30)
+
+Drobné opravy.
+
+## 9.3.1 – opravy chyb (2026-09-30)
+
+Drobné opravy.
+
+## 9.3.0 – ikona v oznamovací oblasti (2026-09-30)
+
+Drobné opravy.
+
+## 9.2.9 – opravy chyb (2026-09-30)
+
+Drobné opravy.
+
+## 9.2.8 – tlačítka v aplikaci v Androidu (2026-09-30)
+
+Skrytá tlačítka v aplikaci už nejsou vidět.
+
+## 9.2.7 – otevírání odkazů a aktualizace v Androidu (2026-09-30)
+
+Odkazy v aplikaci se otevírají spolehlivěji a když se nepovede otevřít, aplikace řekne proč.
+
+## 9.2.6 – stažení a instalace aktualizace v aplikaci (2026-09-30)
+
+Tlačítko aktualizace v Androidu aplikaci stáhne a spustí instalaci.
+
+## 9.2.5 – aktualizace APK bez odinstalace (2026-09-30)
+
+Aplikace v Androidu se podepisuje stálým klíčem, takže se další verze nainstalují přes tu předchozí. Tuhle verzi je potřeba nainstalovat naposledy po odinstalování staré.
+
+## 9.2.4 – aktualizace aplikace v Androidu (2026-09-30)
+
+Aplikace v Androidu ukáže, jestli je dostupná novější verze, a nabídne její stažení.
+
+## 9.2.3 – přidání do Stremia a Nuvia v Androidu a služba na pozadí (2026-09-30)
+
+Přidání doplňku do Stremia a Nuvia na stejném zařízení v Androidu už nehlásí chybu TLS ani nezůstane na točícím se kolečku. Aplikace v Androidu běží jako služba na pozadí, po restartu i po aktualizaci se spustí sama, sama se znovu nahodí a ukazuje, jestli jí Android neomezuje baterii.
+
+## 9.2.2 – logo v Nuviu (2026-09-30)
+
+Drobné opravy.
+
+## 9.2.1 – bez ukázek ve výběru streamu (2026-09-30)
+
+Bez ukázek a krátkých videí ve výběru streamu.
+
+## 9.0.9 (2026-09-29)
+
+Drobné opravy.
+
+## 9.0.8 (2026-09-29)
+
+Drobné opravy.
+
+## 9.0.7 – kontrola aktualizací z nastavení (2026-09-29)
+
+Drobné opravy.
+
+## 9.0.6 (2026-09-29)
+
+Drobné opravy.
+
+## 9.0.5 (2026-09-29)
+
+Drobné opravy.
+
+## 9.0.4 – opravy chyb (2026-09-29)
+
+Opravy chyb.
+
+## 9.0.0 – první vydání aplikace (2026-09-29)
+
+Nokturno pro Stremio jako aplikace, která běží u tebe: Windows, macOS, Linux a Android.

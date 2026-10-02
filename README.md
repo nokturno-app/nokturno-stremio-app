@@ -140,12 +140,18 @@ Nastavení pak otevři na `http://<adresa zařízení>:7140/configure`. V kontej
    - na zařízení, kde aplikace běží: `http://127.0.0.1:7140/configure`,
    - z jiného zařízení ve stejné síti: `http://<IP adresa toho zařízení>:7140/configure`
      (adresu vypíše aplikace při startu, v Androidu je na hlavní obrazovce).
-2. Vyplň vlastní úložiště a případně účty zdrojů, u každého dej **Ověřit**. Potvrď souhlas s podmínkami.
-3. Klikni na **Přidat do Stremia** nebo **Přidat do Nuvia**. Pro Streamlet a ruční vložení je
-   **Zkopírovat adresu**.
-4. Na televizi se doplněk objeví sám, když ho přidáš na telefonu nebo počítači pod stejným účtem Stremio.
+2. Založ profil: napiš jeho název (třeba *Obývák*) a dej **Založit nový profil**. Uložené profily jsou na téže
+   stránce v seznamu.
+3. Vyplň vlastní úložiště a případně účty zdrojů (každý zdroj má svou záložku) a dej **✓ Ověřit všechny účty**.
+   Potvrď souhlas s podmínkami.
+4. Klikni na **Přidat do Stremia** nebo **Přidat do Nuvia**. Pro Streamlet a ruční vložení je
+   **Zkopírovat adresu**, pro telefon **QR pro mobil**.
+5. Na televizi se doplněk objeví sám, když ho přidáš na telefonu nebo počítači pod stejným účtem Stremio.
 
-Adresa doplňku obsahuje tvoje nastavení i účty. Nikomu ji neposílej.
+Nastavení se ukládá v aplikaci (od verze 9.6.0). Změny ulož tlačítkem **Uložit změny** a platí hned, doplněk
+znovu přidávat nemusíš – jen po změně katalogů. Adresu doplňku nikomu neposílej: hesla v ní nejsou, ale kdo ji má
+a dostane se k aplikaci, používá tvoje účty. Podrobně v
+[nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-instalace).
 
 ### Proč adresa začíná na `https://…my.local-ip.co`
 Stremio přijme doplněk přes obyčejné `http` jen z téhož zařízení (`127.0.0.1`). Z jiného zařízení v síti
@@ -183,6 +189,8 @@ Po úpravě aplikaci restartuj. Port jde změnit i při spuštění: `--port 715
 HTTPS vypne `--bez-https`, jinou datovou složku určí `--data SLOŽKA`.
 
 ## Aktualizace
+
+Co se v jednotlivých verzích změnilo, je v [CHANGELOG.md](CHANGELOG.md).
 
 Aplikace se aktualizuje sama. Při startu a pak každých 6 hodin se podívá do `update.json` v tomto repozitáři.
 Novou verzi stáhne, ověří otisk SHA-256 a spustí. Když nová verze nenaběhne, vrátí se k předchozí.
