@@ -2,6 +2,14 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.0.0 – vlastní katalogy a koncerty (2026-10-03)
+
+- **Vlastní katalogy.** Až 20 seznamů na domovské stránce Stremia, každý ve vlastní záložce. Založíš je ze šablony (Populární, Nejlépe hodnocené, Nové s CZ dabingem, Filmy ve 4K s CZ dabingem, Pohádky s CZ dabingem…) nebo podle žánrů, témat, země původu a let. Návod: [Vlastní katalogy](https://nokturno-app.github.io/nokturno-napoveda/cs/vlastni-katalogy).
+- **Jen tituly se streamem.** Katalog ověřuje na pozadí, dokud aplikace běží, a ukáže jen to, co jde přehrát v kvalitě, jazyce zvuku a titulků, jakou chceš, i s 5.1.
+- **Koncerty.** Zaškrtni hudební žánry a vlož klíč Last.fm (zdarma). Ve Stremiu přibude druh Koncerty se seznamy Nově přidané a Podle abecedy. Návod: [Koncerty](https://nokturno-app.github.io/nokturno-napoveda/cs/koncerty).
+- Dřívější karta Katalogy (Populární, Nejlépe hodnocené) se sama převedla na vlastní katalogy.
+- Po změně katalogů nebo koncertů doplněk ve Stremiu přidej znovu.
+
 ## 9.12.1 – heslo správce bez kódu (2026-10-03)
 
 - **Heslo správce si nastavíš hned.** Pole „Kód z výpisu aplikace“ je pryč, při prvním otevření nastavení stačí zadat heslo dvakrát.
