@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.0.2 – aktuální časté otázky (2026-10-03)
+
+- Časté otázky ve formuláři odpovídají aplikaci u tebe: hesla jsou v profilu v aplikaci, změny účtů a předvoleb platí hned, doplněk se znovu přidává jen po změně katalogů.
+- Nové otázky ke Koncertům a vlastním katalogům, chyby se hlásí na Discordu.
+
 ## 10.0.1 – vlastní katalogy s vlastním klíčem TMDB (2026-10-03)
 
 - S vlastním klíčem TMDB (`tmdb_key` v `nokturno.json`) se vlastní katalogy berou přímo z TMDB a server Nokturna je jen záloha. Bez klíče se nic nemění.
