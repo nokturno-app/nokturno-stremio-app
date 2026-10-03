@@ -2,6 +2,14 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.9.4 – drobné opravy (2026-10-03)
+
+- Sekce Aplikace (profily a heslo) je vidět hned na první obrazovce nastavení.
+
+## 9.9.3 – drobné opravy (2026-10-03)
+
+- Hláška pod tlačítkem Založit nový profil už na něm nelepí.
+
 ## 9.9.2 – profily a heslo v nastavení aplikace (2026-10-03)
 
 - **Sekce Aplikace** na stránce nastavení (jen pro správce, ne přes veřejnou adresu): přepínač **Profily** a **heslo k nastavení**.
