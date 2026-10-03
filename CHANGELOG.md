@@ -2,15 +2,24 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
-## 9.12.1 – drobné opravy (2026-10-03)
+## 9.12.1 – heslo správce bez kódu (2026-10-03)
 
-- Heslo správce si nastavíš bez kódu z výpisu aplikace. Kdo nastavení otevře první, stane se správcem – na veřejné adrese ho proto otevři hned po instalaci.
+- **Heslo správce si nastavíš hned.** Pole „Kód z výpisu aplikace“ je pryč, při prvním otevření nastavení stačí zadat heslo dvakrát.
+- Kdo nastavení otevře první, stane se správcem. Na veřejné adrese (VPS, vlastní doména) ho proto otevři hned po instalaci.
+- Po 20 špatných heslech za 10 minut aplikace další pokusy na chvíli odmítá.
 
 ## 9.12.0 – správce aplikace (2026-10-03)
 
-- **Heslo správce.** Při prvním otevření nastavení si nastavíš heslo správce. Jen správce vidí sekci Aplikace a všechny profily. Mimo domácí síť chce stránka navíc kód, který aplikace vypíše při startu do logu.
-- **Kamarádi** si dál zakládají vlastní profily bez hesla. Vidí ale jen ty, které si uložili ve svém prohlížeči.
-- Heslo k celé stránce z 9.9.2 nahradilo heslo správce. Zapomenuté heslo: v datové složce smaž ze souboru aplikace.json položku spravce a aplikaci restartuj.
+Aplikace pozná svého majitele podle **hesla správce**, ne podle sítě. Funguje tak stejně doma, na VPS i za vlastní doménou. Návod: [Heslo správce a profily kamarádů](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace#heslo-spravce-a-profily-kamaradu).
+
+- **První spuštění.** Dokud heslo není, stránka `/configure` ukáže jen kartu *Heslo správce*. Heslo má aspoň 6 znaků.
+- **Správce vidí** všechny profily (i ty, které si založili kamarádi), sekci **⚙ Aplikace** s přepínačem profilů, změnou hesla, odhlášením a kontrolou aktualizací, a povoluje zařízení.
+- **Kamarádi a ostatní** heslo nepotřebují. Profil si založí a doplněk přidají jako dřív, v seznamu ale vidí jen profily, které si uložili ve svém prohlížeči. Sekci Aplikace ani cizí profily neuvidí.
+- **Doplněk ve Stremiu a Nuviu** heslo nechce, adresa doplňku se nemění.
+- **Přihlášení v jiném prohlížeči:** dole na stránce nastavení *Jsi správce aplikace? Přihlas se*. Přihlášení vydrží rok.
+- **Změna hesla** v sekci Aplikace ukončí ostatní přihlášení správce.
+- **Zapomenuté heslo:** v datové složce smaž ze souboru `aplikace.json` položku `spravce` a aplikaci restartuj. Na Androidu to jde jen smazáním dat aplikace (zmizí i profily).
+- Heslo k celé stránce z 9.9.2 heslo správce nahradilo.
 
 ## 9.11.1 – drobné opravy (2026-10-03)
 
