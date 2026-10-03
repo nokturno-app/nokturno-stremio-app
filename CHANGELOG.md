@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.9.2 – profily a heslo v nastavení aplikace (2026-10-03)
+
+- **Sekce Aplikace** na stránce nastavení (jen pro správce, ne přes veřejnou adresu): přepínač **Profily** a **heslo k nastavení**.
+- **Bez profilů.** Kdo je vypne, dostane adresu doplňku s celým nastavením jako dřív. Už uložené profily fungují dál. Na první obrazovce je odkaz Nechci profily.
+- **Heslo** chrání stránku nastavení a profily, když je aplikace dostupná z internetu. Doplněk ve Stremiu heslo nechce. Ukládá se jen jako hash.
+
 ## 9.9.1 – víc streamů z FastShare, CAM na řádku kvality (2026-10-03)
 
 - **FastShare.** Soubory na nových datových serverech FastShare doplněk nepoznal, u nových filmů tak často zbyl jen jeden stream. Teď se ukážou všechny.
