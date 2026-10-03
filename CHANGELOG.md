@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.12.1 – drobné opravy (2026-10-03)
+
+- Heslo správce si nastavíš bez kódu z výpisu aplikace. Kdo nastavení otevře první, stane se správcem – na veřejné adrese ho proto otevři hned po instalaci.
+
 ## 9.12.0 – správce aplikace (2026-10-03)
 
 - **Heslo správce.** Při prvním otevření nastavení si nastavíš heslo správce. Jen správce vidí sekci Aplikace a všechny profily. Mimo domácí síť chce stránka navíc kód, který aplikace vypíše při startu do logu.
