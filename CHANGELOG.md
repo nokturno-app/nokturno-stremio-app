@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.0.1 – vlastní katalogy s vlastním klíčem TMDB (2026-10-03)
+
+- S vlastním klíčem TMDB (`tmdb_key` v `nokturno.json`) se vlastní katalogy berou přímo z TMDB a server Nokturna je jen záloha. Bez klíče se nic nemění.
+
 ## 10.0.0 – vlastní katalogy a koncerty (2026-10-03)
 
 - **Vlastní katalogy.** Až 20 seznamů na domovské stránce Stremia, každý ve vlastní záložce. Založíš je ze šablony (Populární, Nejlépe hodnocené, Nové s CZ dabingem, Filmy ve 4K s CZ dabingem, Pohádky s CZ dabingem…) nebo podle žánrů, témat, země původu a let. Návod: [Vlastní katalogy](https://nokturno-app.github.io/nokturno-napoveda/cs/vlastni-katalogy).
