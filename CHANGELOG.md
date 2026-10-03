@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.12.0 – správce aplikace (2026-10-03)
+
+- **Heslo správce.** Při prvním otevření nastavení si nastavíš heslo správce. Jen správce vidí sekci Aplikace a všechny profily. Mimo domácí síť chce stránka navíc kód, který aplikace vypíše při startu do logu.
+- **Kamarádi** si dál zakládají vlastní profily bez hesla. Vidí ale jen ty, které si uložili ve svém prohlížeči.
+- Heslo k celé stránce z 9.9.2 nahradilo heslo správce. Zapomenuté heslo: v datové složce smaž ze souboru aplikace.json položku spravce a aplikaci restartuj.
+
 ## 9.11.1 – drobné opravy (2026-10-03)
 
 - Tlačítka Přidat do Stremia a Přidat do Nuvia u aplikace bez HTTPS adresu doplňku zkopírují místo otevření aplikace, které končilo chybou „Failed to fetch“.
