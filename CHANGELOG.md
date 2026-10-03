@@ -2,6 +2,13 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.9.1 – víc streamů z FastShare, CAM na řádku kvality (2026-10-03)
+
+- **FastShare.** Soubory na nových datových serverech FastShare doplněk nepoznal, u nových filmů tak často zbyl jen jeden stream. Teď se ukážou všechny.
+- **Značka CAM** je za kvalitou na tomtéž řádku (Full HD 🎥 CAM).
+- **Bez profilů.** `NOKTURNO_PROFILY=0` vrátí nastavení jako dřív – celé nastavení v adrese doplňku, žádné profily.
+- **Heslo.** `NOKTURNO_HESLO` chrání nastavení a profily heslem. Doplněk ve Stremiu heslo nechce.
+
 ## 9.9.0 – kodek obrazu, další vlajky a značka CAM (2026-10-02)
 
 - **Kodek obrazu.** Popis streamu ukazuje kodek z hlavičky souboru (🎞 HEVC, AVC, AV1, MPEG-4…), ať je hned jasné, co tvůj přehrávač zvládne.
