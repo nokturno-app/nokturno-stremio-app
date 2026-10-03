@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 9.11.1 – drobné opravy (2026-10-03)
+
+- Tlačítka Přidat do Stremia a Přidat do Nuvia u aplikace bez HTTPS adresu doplňku zkopírují místo otevření aplikace, které končilo chybou „Failed to fetch“.
+
 ## 9.9.4 – drobné opravy (2026-10-03)
 
 - Sekce Aplikace (profily a heslo) je vidět hned na první obrazovce nastavení.
