@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.4.0 – koncerty z vlastního úložiště (2026-10-04)
+
+- Koncerty hledají ve tvém vlastním úložišti a skládají z nich katalog, volitelně i v úložištích třetích stran, která máš povolená a nastavená.
+
 ## 10.3.1 – drobné opravy (2026-10-04)
 
 - Interpret přidaný hledáním se uloží pod jménem, jak ho vede Last.fm („arakain“ → „Arakain“).
