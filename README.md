@@ -1,11 +1,11 @@
 # Nokturno pro Stremio – aplikace
 
 Nokturno je přehrávač a vyhledávač pro **Stremio** a **Nuvio** nad tvým vlastním úložištěm
-(například WebDAV na NASu) i nad úložišti třetích stran, které si v nastavení zapneš.
+(například WebDAV na NASu) volitelně i nad úložišti třetích stran, které si v nastavení zapneš.
 Běží jako malá aplikace u tebe – na počítači, NASu nebo Android TV boxu – a Stremio se na ni
 ptá jako na každý jiný doplněk. Nokturno samo žádný obsah nehostuje ani nešíří.
 
-**Proč aplikace u tebe, a ne doplněk na cizím serveru?** Stremio posílá nastavení doplňku, tedy i jména a hesla k účtům (WebShare, FastShare, Přehraj.to…), v jeho adrese – a tu dostává server, na kterém doplněk běží. U doplňku na cizím serveru tak svoje přihlašovací údaje svěřuješ někomu dalšímu. Když doplněk běží u tebe, údaje zůstávají jen na tvém zařízení a nikdo jiný je nevidí. Je to jediný způsob, jak mít ve Stremiu účty a nikomu je nedávat.
+**Proč aplikace u tebe, a ne doplněk na cizím serveru?** Stremio posílá nastavení doplňku, tedy i jména a hesla k účtům (vlastní úložiště a volitelně WebShare, FastShare, Přehraj.to…), v jeho adrese – a tu dostává server, na kterém doplněk běží. U doplňku na cizím serveru tak svoje přihlašovací údaje svěřuješ někomu dalšímu. Když doplněk běží u tebe, údaje zůstávají jen na tvém zařízení a nikdo jiný je nevidí. Je to jediný způsob, jak mít ve Stremiu účty a nikomu je nedávat.
 
 > **Patří k sobě:** Nokturno je i jako [**doplněk pro Kodi**](https://github.com/nokturno-app/plugin.video.nokturno) a jako [**integrace pro Home Assistant**](https://github.com/nokturno-app/nokturno-ha) (HACS). Všechny stojí na společném jádru.
 
