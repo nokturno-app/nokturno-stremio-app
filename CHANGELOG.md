@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.4.2 – přehrávání přímo z FastShare (2026-10-04)
+
+- V kartě FastShare je nová volba Přehrávat přímo z FastShare. Přehrávač pak stahuje soubor rovnou z FastShare, ne přes aplikaci. Funguje v Nuviu a ve Stremiu na počítači, Stremio pro Android takový stream nepřehraje.
+
 ## 10.4.1 – vlastní úložiště na prvním místě (2026-10-04)
 
 - Formulář začíná vlastním úložištěm. HellSpy je u nového profilu vypnutý, stávající profily zůstávají, jak byly.
