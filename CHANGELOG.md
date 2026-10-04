@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.3.1 – drobné opravy (2026-10-04)
+
+- Interpret přidaný hledáním se uloží pod jménem, jak ho vede Last.fm („arakain“ → „Arakain“).
+
 ## 10.3.0 – hledání interpreta (2026-10-04)
 
 - V seznamu Koncerty → Podle abecedy jde interpreta vyhledat podle jména.
