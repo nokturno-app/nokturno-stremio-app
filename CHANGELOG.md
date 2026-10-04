@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.7.0 – díly seriálu i bez čísla dílu (2026-10-04)
+
+- Díl seriálu se najde i v souboru bez čísla dílu, podle názvu dílu nebo data vysílání.
+
 ## 10.5.0 – Československo v zemi původu (2026-10-04)
 
 - V zemi původu vlastního katalogu jde vybrat i Československo – starší české a slovenské filmy a seriály.
