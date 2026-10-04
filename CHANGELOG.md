@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.2.1 – adresa doplňku blokovaná DNS (2026-10-04)
+
+- Když telefon nebo router zablokuje adresu doplňku (`…my.local-ip.co`), stránka nastavení řekne, co s tím: v Androidu Soukromé DNS na `one.one.one.one`, na routeru výjimka pro `my.local-ip.co`. Návod: [Časté problémy](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-instalace#caste-problemy).
+- Stejnou kontrolu má i stránka z QR kódu.
+
 ## 10.0.2 – aktuální časté otázky (2026-10-03)
 
 - Časté otázky ve formuláři odpovídají aplikaci u tebe: hesla jsou v profilu v aplikaci, změny účtů a předvoleb platí hned, doplněk se znovu přidává jen po změně katalogů.
