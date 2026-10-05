@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.7.1 – délka streamu a filmy před premiérou (2026-10-05)
+
+- Soubory kratší než 60 % stopáže filmu se ve výpisu streamů neukazují, díly rozdělených filmů (CD1, part2) zůstávají.
+- U filmu s premiérou víc než 14 dní v budoucnu se ukáže jen vlastní úložiště.
+- Délka u streamu je skutečná délka souboru, ne odhad ze stopáže filmu.
+
 ## 10.7.0 – díly seriálu i bez čísla dílu (2026-10-04)
 
 - Díl seriálu se najde i v souboru bez čísla dílu, podle názvu dílu nebo data vysílání.
