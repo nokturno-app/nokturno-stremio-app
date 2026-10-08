@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.9.0 – nevyhledávat DV a HDR streamy (2026-10-08)
+
+- Ve formuláři přibyly volby Skrýt Dolby Vision streamy a Skrýt HDR streamy – pro televize, na kterých mají takové soubory divné barvy nebo tmavý obraz. Poznáváme je podle názvu souboru, takže ne každý takový stream odhalíme.
+- Skrýt 3D streamy pozná víc označení 3D v názvu souboru (SBS, Full SBS, OU).
+- Drobné opravy.
+
 ## 10.7.1 – délka streamu a filmy před premiérou (2026-10-05)
 
 - Soubory kratší než 60 % stopáže filmu se ve výpisu streamů neukazují, díly rozdělených filmů (CD1, part2) zůstávají.
