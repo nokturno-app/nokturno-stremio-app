@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.12.0 – řazení katalogů od nejstaršího a herci (2026-10-09)
+
+- Vlastní katalogy se dají řadit podle data vydání od nejstaršího.
+- V informacích o filmu nebo seriálu z katalogu se ukazují hlavní herci.
+
 ## 10.10.6 – přesnější katalogy podle země (2026-10-09)
 
 - Katalogy podle země původu ukazují jen filmy a seriály v jazyce té země – bez zahraničních filmů, které se u nás jen natáčely.
