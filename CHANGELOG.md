@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.12.4 – drobné opravy (2026-10-10)
+
+- Drobné opravy.
+
 ## 10.12.0 – řazení katalogů od nejstaršího a herci (2026-10-09)
 
 - Vlastní katalogy se dají řadit podle data vydání od nejstaršího.
