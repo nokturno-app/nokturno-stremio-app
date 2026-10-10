@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.13.3 – filmy s 3D v názvu (2026-10-10)
+
+- Skrýt 3D a štítek 3D už nepovažují za 3D verzi filmy, které mají 3D v názvu (Piranha 3D, Šmoulové 3D).
+- Ověřovaný vlastní katalog se ukáže a ověřuje i tehdy, když přehrávač používá adresu, kterou aplikace nemá uloženou jako profil.
+- Vlastní katalog si po aktualizaci nedrží starý výsledek z doby před opravou.
+
 ## 10.13.1 – ověřované katalogy v Nuviu nemizí (2026-10-10)
 
 - Ověřovaný vlastní katalog ukazuje, dokud nic nenajde, tituly čekající na ověření. Nuvio ho tak z domovské obrazovky neschová.
