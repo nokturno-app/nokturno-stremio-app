@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.12.6 – ověřované katalogy se plní hned (2026-10-10)
+
+- Vlastní katalog v režimu Jen tituly se streamem se začne plnit hned po prvním nalezeném titulu a restart aplikace už nezahodí, co se ověřilo. Nuvio prázdný katalog z domovské obrazovky schovává, proto katalogy zmizely.
+- Vlastní katalog řazený podle data vydání od nejnovějšího ukazuje jen filmy a seriály, které už vyšly.
+
 ## 10.12.4 – drobné opravy (2026-10-10)
 
 - Drobné opravy.
