@@ -2,6 +2,13 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.13.0 – skrytí Dolby Vision bez záložní vrstvy a AV1 (2026-10-10)
+
+- Nová volba Skrýt Dolby Vision bez záložní vrstvy (profil 5) schová jen streamy, které televize bez Dolby Vision ukáže zeleně a fialově. Dolby Vision s vrstvou HDR10 zůstane.
+- Nová volba Skrýt AV1 pro přehrávače, které tento kodek neumí.
+- Dolby Vision, HDR a AV1 poznáváme i z hlavičky souboru, nejen z názvu.
+- Ve výpisu streamů se ukazuje formát obrazu: DV only, DV, HDR10, HLG nebo 3D.
+
 ## 10.12.6 – ověřované katalogy se plní hned (2026-10-10)
 
 - Vlastní katalog v režimu Jen tituly se streamem se začne plnit hned po prvním nalezeném titulu a restart aplikace už nezahodí, co se ověřilo. Nuvio prázdný katalog z domovské obrazovky schovává, proto katalogy zmizely.
