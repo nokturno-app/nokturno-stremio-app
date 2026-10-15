@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.15.0 – vlastní úložiště přes SMB (2026-10-15)
+
+- Vlastní úložiště může být i sdílená složka SMB (Windows, Samba na NAS). Stačí zadat adresu ve tvaru smb://server/složka, funguje v aplikaci v domácí síti.
+- Úložiště WebDAV za přesměrováním (třeba z http na https) už nehlásí chybu HTTP 301.
+- Aplikace pro Android ukazuje adresu pro ostatní zařízení z Wi-Fi, ne z mobilních dat. Doplněk přidaný na telefonu pak najde i televize.
+
 ## 10.14.1 – přesnější označení HDR (2026-10-15)
 
 - Výpis streamů pozná u Dolby Vision i HDR10 a HLG podle hlavičky souboru a HDR10+ podle označení UHDR+DV a HDR10+DV.
