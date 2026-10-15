@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 10.14.1 – přesnější označení HDR (2026-10-15)
+
+- Výpis streamů pozná u Dolby Vision i HDR10 a HLG podle hlavičky souboru a HDR10+ podle označení UHDR+DV a HDR10+DV.
+- Pozadí titulu se liší od plakátu.
+- Výpis vlastního úložiště přežije přerušené spojení.
+
 ## 10.13.3 – filmy s 3D v názvu (2026-10-10)
 
 - Skrýt 3D a štítek 3D už nepovažují za 3D verzi filmy, které mají 3D v názvu (Piranha 3D, Šmoulové 3D).
