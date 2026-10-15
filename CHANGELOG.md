@@ -2,6 +2,15 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 11.0.0 – uživatelské účty a ochrana hesel (2026-10-15)
+
+- Správce aplikace má jméno, heslo a e-mail. Po aktualizaci se na stránce nastavení přihlas heslem správce a doplň jméno a e-mail. Dostaneš obnovovací kód pro zapomenuté heslo.
+- Profily zakládá a upravuje jen přihlášený správce. Kdo zná adresu doplňku, jen přehrává – nastavení ani hesla nevidí a profil nezmění.
+- Uložená hesla se do stránky nastavení nevrací, ani správci. Pole ukazuje Uloženo a při změně účtu nebo adresy úložiště je potřeba heslo zadat znovu.
+- Nový režim Uživatelské účty: správce zakládá účty kamarádům a každý si spravuje svoje profily. Správce vidí počet profilů a přehrání, ne co kdo sleduje, a může účet zablokovat nebo smazat.
+- Staré adresy, které nesou celé nastavení včetně hesel, jde v sekci Aplikace vypnout.
+- Správce se mimo domácí síť zakládá s kódem z výpisu aplikace. Tovární nastavení smaže správce, uživatele i profily.
+
 ## 10.15.0 – vlastní úložiště přes SMB (2026-10-15)
 
 - Vlastní úložiště může být i sdílená složka SMB (Windows, Samba na NAS). Stačí zadat adresu ve tvaru smb://server/složka, funguje v aplikaci v domácí síti.
