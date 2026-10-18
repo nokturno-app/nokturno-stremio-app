@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 11.2.3 – uložení úložiště přes SMB (2026-10-18)
+
+- Nastavení s vlastním úložištěm zadaným jako smb:// jde teď i uložit.
+
 ## 11.2.2 – ověření úložiště přes SMB (2026-10-18)
 
 - Opravili jsme ověření vlastního úložiště zadaného jako smb://.
