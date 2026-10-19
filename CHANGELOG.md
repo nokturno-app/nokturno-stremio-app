@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 11.2.8 – cztor po změně rozhraní (2026-10-19)
+
+- Přehrávání z CZtoru funguje i po změně jejich rozhraní.
+- Titul, ke kterému se nikde nic nenašlo, se 20 minut znovu neprohledává.
+
 ## 11.2.3 – uložení úložiště přes SMB (2026-10-18)
 
 - Nastavení s vlastním úložištěm zadaným jako smb:// jde teď i uložit.
