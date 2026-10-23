@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 12.1.0 – vyloučení zemí v katalogu (2026-10-23)
+
+- Ve vlastním katalogu jde vyloučit země původu.
+- Drobné opravy.
+
 ## 11.5.1 – vysvětlené řazení v katalogu (2026-10-22)
 
 - U vlastního katalogu je ve formuláři vysvětlené řazení.
