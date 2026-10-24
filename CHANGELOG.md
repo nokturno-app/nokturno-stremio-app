@@ -2,6 +2,12 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 12.3.0 – detail a hledání v Nuviu (2026-10-24)
+
+- V aplikacích bez Cinemety (třeba Nuvio) se otevře detail filmu nebo seriálu z katalogů Nokturna.
+- V aplikacích bez Cinemety funguje i hledání filmů a seriálů, české názvy najde i bez diakritiky.
+- Po aktualizaci doplněk v Nuviu obnov, ať si načte nový seznam katalogů.
+
 ## 12.1.1 – nové filmy ve vlastních katalozích (2026-10-23)
 
 - Vlastní katalogy nových filmů s ověřováním streamů berou jen filmy, které už vyšly digitálně nebo na DVD a Blu-ray, takže katalog řazený od nejnovějšího už nezůstane skoro prázdný.
