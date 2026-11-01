@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 12.4.3 – doplněk v síti nepřestane odpovídat (2026-11-01)
+
+- Doplněk přes HTTPS v domácí síti (třeba v Home Assistantu) už po čase nepřestane odpovídat a nebude ho potřeba restartovat.
+- Drobné opravy.
+
 ## 12.3.0 – detail a hledání v Nuviu (2026-10-24)
 
 - V aplikacích bez Cinemety (třeba Nuvio) se otevře detail filmu nebo seriálu z katalogů Nokturna.
