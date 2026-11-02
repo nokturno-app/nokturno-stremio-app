@@ -2,6 +2,10 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 12.4.4 – podrobnější log při potížích (2026-11-02)
+
+- Do logu doplňku se zapisují příchozí dotazy, zaseknuté hledání i odmítnuté požadavky, ať jde líp dohledat, proč doplněk nic nenajde.
+
 ## 12.4.3 – doplněk v síti nepřestane odpovídat (2026-11-01)
 
 - Doplněk přes HTTPS v domácí síti (třeba v Home Assistantu) už po čase nepřestane odpovídat a nebude ho potřeba restartovat.
