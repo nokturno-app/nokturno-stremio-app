@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 12.6.3 – doplněk se sám vzpamatuje, když přestane odpovídat (2026-11-15)
+
+- Když doplněk v Home Assistantu nebo na počítači přestane odpovídat, sám to do pár minut pozná a restartuje se. Do logu zapíše, kde se zasekl, ať můžeme najít příčinu.
+- Drobné opravy.
+
 ## 12.4.4 – podrobnější log při potížích (2026-11-02)
 
 - Do logu doplňku se zapisují příchozí dotazy, zaseknuté hledání i odmítnuté požadavky, ať jde líp dohledat, proč doplněk nic nenajde.
