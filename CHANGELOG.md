@@ -2,6 +2,11 @@
 
 Přehled vydání aplikace. Stažení na stránce [vydání](https://github.com/nokturno-app/nokturno-stremio-app/releases), návod v [nápovědě](https://nokturno-app.github.io/nokturno-napoveda/cs/stremio-aplikace).
 
+## 12.7.0 – katalog filmů a seriálů z vlastního úložiště (2026-11-19)
+
+- Kdo má nastavené vlastní úložiště, najde ve Stremiu nový katalog Vlastní úložiště – filmy a seriály, které v úložišti leží, bez hledání.
+- Když doplněk v Dockeru přestane odpovídat, sám se restartuje.
+
 ## 12.6.3 – doplněk se sám vzpamatuje, když přestane odpovídat (2026-11-15)
 
 - Když doplněk v Home Assistantu nebo na počítači přestane odpovídat, sám to do pár minut pozná a restartuje se. Do logu zapíše, kde se zasekl, ať můžeme najít příčinu.
